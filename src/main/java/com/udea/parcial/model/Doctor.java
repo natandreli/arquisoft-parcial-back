@@ -28,7 +28,7 @@ public class Doctor implements Serializable {
 
     @Schema(description = "identification_number of the doctor")
     @Column(name = "identification_number", nullable = false, unique = true)
-    private String identification_number;
+    private String identificationNumber;
 
     @Schema(description = "Specialty of the doctor")
     @Column(name = "specialty", nullable = false)

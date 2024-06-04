@@ -28,7 +28,7 @@ public class Patient implements Serializable {
 
     @Schema(description = "indentification_number of the patient")
     @Column(name = "identification_number", nullable = false, unique = true)
-    private String identification_number;
+    private String identificationNumber;
 
     @Schema(description = "Date of birth of the patient")
     @Temporal(TemporalType.DATE)
