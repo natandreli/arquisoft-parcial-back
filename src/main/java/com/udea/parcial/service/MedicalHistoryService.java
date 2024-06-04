@@ -17,11 +17,12 @@ public class MedicalHistoryService {
         return dao.save(medicalHistory);
     }
 
-    public Iterable<MedicalHistory> getMedicalHistories(){
+    public Iterable<MedicalHistory> getAll(){
         return dao.findAll();
     }
 
     public Iterable<MedicalHistory> getAllByPatientId(long patientId){
         return dao.findByPatientId(patientId);
     }
+
 }
