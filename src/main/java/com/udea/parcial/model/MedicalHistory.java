@@ -24,7 +24,7 @@ public class MedicalHistory implements Serializable {
 
     @Schema(description = "Identifier of the associated patient")
     @Column(name = "patient_id", nullable = false)
-    private long idPatient;
+    private long patientId;
 
     @Schema(description = "Identifier of the doctor who recorded the history")
     @Column(name = "id_doctor", nullable = false)

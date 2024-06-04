@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface IMedicalHistoryDAO extends CrudRepository<MedicalHistory, Long> {
+    Iterable<MedicalHistory> findByPatientId(long patientId);
 }
