@@ -23,27 +23,27 @@ public class Patient implements Serializable {
     private long patientId;
 
     @Schema(description = "Full name of the patient")
-    @Column(name = "name", nullable = false)
+    @Column(name = "name", nullable = false, length = 100)
     private String name;
 
     @Schema(description = "indentification_number of the patient")
-    @Column(name = "identification_number", nullable = false, unique = true)
+    @Column(name = "identification_number", nullable = false, length = 10, unique = true)
     private String identificationNumber;
 
     @Schema(description = "Date of birth of the patient")
     @Temporal(TemporalType.DATE)
-    @Column(name = "date_of_birth", nullable = false)
+    @Column(name = "date_of_birth", nullable = false, length = 10)
     private LocalDate dateOfBirth;
 
     @Schema(description = "Address of the patient")
-    @Column(name = "address", nullable = false)
+    @Column(name = "address", nullable = false, length = 200)
     private String address;
 
     @Schema(description = "Phone number of the patient")
-    @Column(name = "phone", nullable = false)
+    @Column(name = "phone", nullable = false, length = 10)
     private String phone;
 
     @Schema(description = "Email of the patient")
-    @Column(name = "email", nullable = false)
+    @Column(name = "email", nullable = false, length = 100)
     private String email;
 }

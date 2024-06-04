@@ -23,22 +23,22 @@ public class Doctor implements Serializable {
     private long doctorId;
 
     @Schema(description = "Full name of the doctor")
-    @Column(name = "name", nullable = false)
+    @Column(name = "name", nullable = false, length = 100)
     private String name;
 
     @Schema(description = "identification_number of the doctor")
-    @Column(name = "identification_number", nullable = false, unique = true)
+    @Column(name = "identification_number", nullable = false, length = 10, unique = true)
     private String identificationNumber;
 
     @Schema(description = "Specialty of the doctor")
-    @Column(name = "specialty", nullable = false)
+    @Column(name = "specialty", nullable = false, length = 100)
     private String specialty;
 
     @Schema(description = "Phone number of the doctor")
-    @Column(name = "phone", nullable = false)
+    @Column(name = "phone", nullable = false, length = 10)
     private String phone;
 
     @Schema(description = "Email of the doctor")
-    @Column(name = "email", nullable = false)
+    @Column(name = "email", nullable = false, length = 100)
     private String email;
 }
